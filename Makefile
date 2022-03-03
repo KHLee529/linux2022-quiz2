@@ -11,7 +11,7 @@ average: average.c
 gcd: gcd.c gcd_test.c
 	gcc -O3 $^ -o gcd.out
 	./gcd.out
-	gnuplot gcd.gp
+	gnuplot ./scripts/gcd.gp
 
 clean:
 	rm -rf *.o *.out *.png *.txt
