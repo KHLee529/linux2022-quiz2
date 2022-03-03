@@ -13,5 +13,10 @@ gcd: gcd.c gcd_test.c
 	./gcd.out
 	gnuplot ./scripts/gcd.gp
 
+tzcnt: tzcnt.c
+	gcc -O3 $^ -o tzcnt.out
+	./tzcnt.out
+	gnuplot ./scripts/tzcnt.gp
+
 clean:
-	rm -rf *.o *.out *.png *.txt
+	rm -rf *.o *.out **/*.txt
